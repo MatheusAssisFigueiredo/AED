@@ -8,7 +8,7 @@ void trocaarray(int A[],int tamanho)
 
 
 }
-
+// Main
 int main()
 {
     int tamanho=0;
@@ -25,3 +25,4 @@ int main()
 
     }
 }
+
