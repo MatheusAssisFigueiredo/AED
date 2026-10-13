@@ -25,7 +25,25 @@ void preencherarray(int A[],int tamanho)
         A[i]=i;
     }
 }
+
+void maiorparaultimaposicao(int A[],int tamanho)
+{
+int maior=0,aux=0;
+for(int i=1;i<tamanho;i++)
+{
+if(A[maior]<A[i])
+{
+maior=i;
+}
+}
+aux=A[maior];
+A[maior]=A[tamanho-1];
+A[tamanho-1]=aux;
+}
 // Main
+
+
+
 int main()
 {
     int tamanho=0;
