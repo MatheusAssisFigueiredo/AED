@@ -40,6 +40,21 @@ aux=A[maior];
 A[maior]=A[tamanho-1];
 A[tamanho-1]=aux;
 }
+
+void menorparaultimaposicao(int A[],int tamanho)
+{
+int menor=0,aux=0;
+for(int i=1;i<tamanho;i++)
+{
+if(A[menor]>A[i])
+{
+menor=i;
+}
+}
+aux=A[menor];
+A[menor]=A[0];
+A[0]=aux;
+}
 // Main
 
 
