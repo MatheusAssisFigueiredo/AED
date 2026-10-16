@@ -55,6 +55,26 @@ aux=A[menor];
 A[menor]=A[0];
 A[0]=aux;
 }
+void ordenardrescente(double vetor[], int tamanho)
+{
+    int i, j;
+    double aux;
+
+    for (i = 1; i < tamanh; i++)
+    {
+        for (j = 0; j < tamanho - 1 - i; j++)
+        {
+            if (vetor[j] > vetor[j + 1])
+            {
+                aux = vetor[j];
+                vetor[j] = vetor[j + 1];
+                vetor[j + 1] = aux;
+            }
+        }
+    }
+}
+
+
 // Main
 
 
