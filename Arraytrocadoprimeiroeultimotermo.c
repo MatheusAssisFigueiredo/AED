@@ -73,7 +73,12 @@ void ordenardrescente(double vetor[], int tamanho)
         }
     }
 }
+void meses(int i)
+{
 
+
+    
+}
 
 // Main
 
