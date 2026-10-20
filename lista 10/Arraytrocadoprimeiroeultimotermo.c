@@ -79,6 +79,19 @@ void meses(int i)
 
     
 }
+int somadosvetores(int A[],int tamanho)
+{
+    int soma=0;
+    for(int i=0;i<tamanho;i++)
+    soma+=A[i];
+    return soma;
+}
+
+float media(int soma,int tamanho)
+{
+return (float)soma/tamanho;
+
+}
 
 // Main
 
