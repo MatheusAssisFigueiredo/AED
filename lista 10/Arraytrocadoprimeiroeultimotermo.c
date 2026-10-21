@@ -93,6 +93,17 @@ return (float)soma/tamanho;
 
 }
 
+int acimadamedia(int A[],int tamanho,float media)
+{  int contador=0;
+ for(int i=0;i<tamanho;i++)
+    if(A[i]>media)
+    {
+        contador++;
+
+
+    }
+    return contador;
+}
 // Main
 
 
