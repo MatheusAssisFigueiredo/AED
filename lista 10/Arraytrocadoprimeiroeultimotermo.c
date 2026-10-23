@@ -106,7 +106,16 @@ int acimadamedia(int A[],int tamanho,float media)
 }
 // Main
 
-
+void preenchermatrix(int nlinhas,int ncolunas,V[][ncolunas])
+{
+    for(int i=0;i<nlinhas;i++)
+    {
+        for(int j=0;j<ncolunas;j++)
+        {
+            V[i][j]=i+j;
+        }
+    }
+}
 
 int main()
 {
