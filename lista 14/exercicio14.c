@@ -45,4 +45,24 @@ void listarLivros(Livro livros[], int n, int anoReferencia) {
         }
     }
 }
+#define PI 3.14159
+
+typedef struct {
+    float raio;
+} Circulo;
+
+void listarCirculos(Circulo vet[], int tamanho) {
+    int i;
+    float perimetro, area;
+
+    for (i = 0; i < tamanho; i++) {
+        perimetro = 2 * PI * vet[i].raio;
+        area = PI * vet[i].raio * vet[i].raio;
+
+        printf("\nCirculo %d\n", i + 1);
+        printf("Raio: %.2f\n", vet[i].raio);
+        printf("Perimetro: %.2f\n", perimetro);
+        printf("Area: %.2f\n", area);
+    }
+}
 int main(){ }
